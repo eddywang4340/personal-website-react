@@ -39,6 +39,37 @@
     border-radius: 10px;
     transition: 0.3s;
 }
+.popup-project {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+.popup-project span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    height: 500px;
+    background: blue;
+    object-fit: cover;
+}
 .projects-showmore {
     display: flex;
     gap: 15px;
@@ -56,6 +87,9 @@
     transition: 0.6s;
 }
 @media(max-width: 768px) {
+    .popup {
+        width: 95%;
+    }
     .projects {
         gap: 50px;
         margin: 50px 70px;
