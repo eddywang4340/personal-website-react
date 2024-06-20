@@ -29,7 +29,7 @@
 .projects-container img {
     box-sizing: border-box;
     width: 380px;
-    height: 280px;
+    height: 256px;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -59,6 +59,8 @@
     z-index: 100;
 }
 .popup {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,8 +69,18 @@
     border-radius: 5px;
     width: 750px;
     height: 500px;
-    background: blue;
+    background: #0C2D48;
     object-fit: cover;
+    text-align: center;
+}
+.popup h {
+    margin-bottom: 10px;
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.popup p {
+    padding: 0px 30px;
 }
 .projects-showmore {
     display: flex;
