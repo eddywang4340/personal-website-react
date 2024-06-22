@@ -20,7 +20,13 @@ const Projects = () => {
                 <span onClick={()=> setOpen1(false)}>&times;</span>
                 <div className="popup">
                     <h>{projects_data[0].w_name}</h>
-                    <p>{projects_data[0].w_description}</p>
+                    <ul>
+                        <li>{projects_data[0].w_bp_1}</li>
+                        <li>{projects_data[0].w_bp_2}</li>
+                        <li>{projects_data[0].w_bp_3}</li>
+                        <li>{projects_data[0].w_bp_4}</li>
+                    </ul>
+                    
                 </div>
             </div>
         ) : isOpen2 ? (

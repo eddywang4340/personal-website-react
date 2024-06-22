@@ -8,8 +8,11 @@ import project6_img from '../assets/project_6.svg'
 const mywork_data = [
     {
         w_no:1,
-        w_name:"Bird Classifier - Machine Learning",
-        w_description: "Learned basics of machine learning through Google's crash course (introduction to TensorFlow and training/testing data).\n Categorized bird species into NumPy arrays and partitioned the data set into a training data and a testing data.\n Used TensorFlow Keras to build a sequential model and added Conv2D filters to increase the depth of image perception.\n Saved evaluated and trained model as a JSON file to be used to predict the bird species of a singular image",
+        w_name:"Bird Classifier - ML",
+        w_bp_1: "Learned basics of machine learning through Google's crash course (introduction to TensorFlow and training/testing data).",
+        w_bp_2: "Categorized bird species into NumPy arrays and partitioned the data set into a training data and a testing data.",
+        w_bp_3: "Used TensorFlow Keras to build a sequential model and added Conv2D filters to increase the depth of image perception.",
+        w_bp_4: "Saved evaluated and trained model as a JSON file to be used to predict the bird species of a singular image.",
         w_img:project1_img
     },
     {
