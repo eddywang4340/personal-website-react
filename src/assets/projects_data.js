@@ -1,7 +1,7 @@
 import project1_img from '../assets/project_1.svg'
 import project2_img from '../assets/project_2.svg'
-import project3_img from '../assets/project_3.svg'
-import project4_img from '../assets/project_4.svg'
+import project3_img from '../assets/project_3.jpg'
+import project4_img from '../assets/project_4.png'
 import project5_img from '../assets/project_5.svg'
 import project6_img from '../assets/project_6.svg'
 
@@ -35,8 +35,11 @@ const mywork_data = [
     },
     {
         w_no:4,
-        w_name:"Web design 4",
-        w_description: "Web design 4's description",
+        w_name:"Auxilium Website Design",
+        w_bp_1: "Implemented Django framework to create HTML templates and collected user data through models.py and forms.py.",
+        w_bp_2: "Devised Python algorithm to create mentee-mentor pairs based on field information (grade, subjects, and program).",
+        w_bp_3: "Embedded a form within the website to effectuate the logging of volunteer hours for mentors and executives.",
+        w_bp_4: "Designed a sign-in and sign-up component to create user profiles and meeting spaces for mentees/mentors during meetings.",
         w_img:project4_img
     },
     {

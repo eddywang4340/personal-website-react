@@ -24,7 +24,7 @@ const Projects = () => {
     };
 
     const redirectToDemo2 = () => {
-        // window.open("https://github.com/eddywang4340/RoboticArm", "_blank");
+        window.open("https://drive.google.com/drive/folders/185Sz3yPdRMCfaHdSApItf4EcdsfCQdng?usp=sharing", "_blank");
     };
 
     const redirectToGithub3 = () => {
@@ -32,7 +32,15 @@ const Projects = () => {
     };
 
     const redirectToDemo3 = () => {
-        // window.open("https://github.com/eddywang4340/RoboticArm", "_blank");
+        window.open("https://drive.google.com/drive/folders/1Y8reBivWYAxrGB9j3RqZ31iSeFhlZeOs?usp=sharing", "_blank");
+    };
+
+    const redirectToGithub4 = () => {
+        window.open("https://github.com/eddywang4340/Updated_Auxilium", "_blank");
+    };
+
+    const redirectToDemo4 = () => {
+        // window.open("https://drive.google.com/drive/folders/1Y8reBivWYAxrGB9j3RqZ31iSeFhlZeOs?usp=sharing", "_blank");
     };
 
     return (
@@ -86,7 +94,14 @@ const Projects = () => {
                 <span onClick={()=> setOpen4(false)}>&times;</span>
                 <div className="popup">
                     <h>{projects_data[3].w_name}</h>
-                    <p>{projects_data[3].w_description}</p>
+                    <ul>
+                        <li>{projects_data[3].w_bp_1}</li>
+                        <li>{projects_data[3].w_bp_2}</li>
+                        <li>{projects_data[3].w_bp_3}</li>
+                        <li>{projects_data[3].w_bp_4}</li>
+                    </ul>
+                    <button className='projects-github' onClick={redirectToGithub4} type="button"><img src={github_logo}/>Github</button>
+                    <button className='projects-demo' onClick={redirectToDemo4} type="button"><img src={demo_logo}/>Demo</button>
                 </div>
             </div>
         ) : isOpen5 ? (
@@ -128,7 +143,7 @@ const Projects = () => {
                     <img src={arrow_icon} alt="" />
                 </div>
             </div>
-        )};
+        )}
     </>
     )
 }
