@@ -166,6 +166,30 @@
     .popup {
         width: 95%;
     }
+    .popup h {
+        font-size: 25px;
+    }
+    .projects-github-single {
+        left: 28%;
+        transform: scale(0.6);
+    }
+    .projects-github-single:hover {
+        transform: scale(0.7);
+    }
+    .projects-github {
+        left: 8%;
+        transform: scale(0.6);
+    }
+    .projects-github:hover {
+        transform: scale(0.7);
+    }
+    .projects-demo {
+        left: 50%;
+        transform: scale(0.6);
+    }
+    .projects-demo:hover {
+        transform: scale(0.7);
+    }
     .projects {
         gap: 50px;
         margin: 50px 70px;
@@ -177,8 +201,8 @@
         font-weight: 600;
     }
     .projects-title img {
-        width: 130px;
-        margin-right: -20px;
+        width: 145px;
+        right: 17px;
     }
     .projects-container {
         grid-template-columns: 1fr 1fr;
