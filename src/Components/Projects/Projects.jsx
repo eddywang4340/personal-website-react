@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Projects.css'
 import theme_pattern from '../../assets/theme_pattern.png'
-import projects_data from '../../assets/projects_data'
+import {display_projects, projects_data} from '../../assets/projects_data'
 import arrow_icon from '../../assets/arrow_icon.svg'
 import github_logo from '../../assets/github_logo.png'
 import demo_logo from '../../assets/demo_logo.png'
@@ -14,6 +14,7 @@ const Projects = () => {
     const [isOpen4, setOpen4] = useState(false);
     const [isOpen5, setOpen5] = useState(false);
     const [isOpen6, setOpen6] = useState(false);
+    const [isShowMore, setShowMore] = useState(false);
 
     const redirectToGithub1 = () => {
         window.open("https://github.com/eddywang4340/Bird-Classifier-ML", "_blank");
@@ -127,21 +128,38 @@ const Projects = () => {
                     <img src={theme_pattern} alt="" />
                 </div>
                 <div className="projects-container">
-                    {projects_data.map((work, index)=>{
-                        return <img key={index} src={work.w_img} alt="" onClick={()=> {
-                            if (index == 0) setOpen1(true);
-                            if (index == 1) setOpen2(true);
-                            if (index == 2) setOpen3(true);
-                            if (index == 3) setOpen4(true);
-                            if (index == 4) setOpen5(true);
-                            if (index == 5) setOpen6(true);
-                        }}/>
-                    })}
+                    {isShowMore ? (
+                        projects_data.map((work, index) => (
+                            <img
+                                key={index}
+                                src={work.w_img}
+                                alt=""
+                                onClick={() => {
+                                    if (index === 0) setOpen1(true);
+                                    if (index === 1) setOpen2(true);
+                                    if (index === 2) setOpen3(true);
+                                    if (index === 3) setOpen4(true);
+                                    if (index === 4) setOpen5(true);
+                                    if (index === 5) setOpen6(true);
+                                }}
+                            />
+                        ))
+                    ) : (
+                        display_projects.map((work, index) => (
+                            <img
+                                key={index}
+                                src={work.w_img}
+                                alt=""
+                                onClick={() => {
+                                    if (index === 0) setOpen1(true);
+                                    if (index === 1) setOpen2(true);
+                                    if (index === 2) setOpen3(true);
+                                }}
+                            />
+                        ))
+                    )}
                 </div>
-                <div className="projects-showmore">
-                    <p>Show More</p>
-                    <img src={arrow_icon} alt="" />
-                </div>
+                <button className='projects-showmore' type='button' onClick={()=> setShowMore(true)}>Show More<img src={arrow_icon} alt="" /></button>
             </div>
         )}
     </>
