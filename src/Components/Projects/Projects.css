@@ -170,21 +170,22 @@
         font-size: 25px;
     }
     .projects-github-single {
-        left: 28%;
+        left: calc(50% - 100px);
+        top: 70%;
         transform: scale(0.6);
     }
     .projects-github-single:hover {
         transform: scale(0.7);
     }
     .projects-github {
-        left: 8%;
+        left: calc(25% - 100px);
         transform: scale(0.6);
     }
     .projects-github:hover {
         transform: scale(0.7);
     }
     .projects-demo {
-        left: 50%;
+        left: calc(75% - 100px);
         transform: scale(0.6);
     }
     .projects-demo:hover {
@@ -201,8 +202,7 @@
         font-weight: 600;
     }
     .projects-title img {
-        width: 145px;
-        right: 17px;
+        display: none;
     }
     .projects-container {
         grid-template-columns: 1fr 1fr;
