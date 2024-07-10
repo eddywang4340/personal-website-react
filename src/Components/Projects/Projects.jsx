@@ -41,7 +41,7 @@ const Projects = () => {
     };
 
     const redirectToDemo4 = () => {
-        // window.open("https://drive.google.com/drive/folders/1Y8reBivWYAxrGB9j3RqZ31iSeFhlZeOs?usp=sharing", "_blank");
+        window.open("https://drive.google.com/drive/folders/1OO2CLlO5XklaIlalLtk5BBOE-AfEnfyf?usp=sharing", "_blank");
     };
 
     return (
