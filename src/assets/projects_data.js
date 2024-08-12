@@ -1,4 +1,4 @@
-import project1_img from '../assets/project_1.svg'
+import project1_img from '../assets/project_1.png'
 import project2_img from '../assets/project_2.jpg'
 import project3_img from '../assets/project_3.jpg'
 import project4_img from '../assets/project_4.png'
