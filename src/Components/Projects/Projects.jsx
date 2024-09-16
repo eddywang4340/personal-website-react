@@ -41,7 +41,11 @@ const Projects = () => {
     };
 
     const redirectToDemo4 = () => {
-        window.open("https://drive.google.com/drive/folders/1OO2CLlO5XklaIlalLtk5BBOE-AfEnfyf?usp=sharing", "_blank");
+        // window.open("https://drive.google.com/drive/folders/1OO2CLlO5XklaIlalLtk5BBOE-AfEnfyf?usp=sharing", "_blank");
+    };
+
+    const redirectToGithub5 = () => {
+        window.open("https://github.com/holycactusjuice/rizz-glasses", "_blank");
     };
 
     return (
@@ -57,7 +61,7 @@ const Projects = () => {
                         <li>{projects_data[0].w_bp_3}</li>
                         <li>{projects_data[0].w_bp_4}</li>
                     </ul>
-                    <button className='projects-github-single' onClick={redirectToGithub1} type="button"><img src={github_logo}/>Github</button>
+                    <button className='projects-github-single' onClick={redirectToGithub5} type="button"><img src={github_logo}/>Github</button>
                 </div>
             </div>
         ) : isOpen2 ? (
@@ -71,8 +75,7 @@ const Projects = () => {
                         <li>{projects_data[1].w_bp_3}</li>
                         <li>{projects_data[1].w_bp_4}</li>
                     </ul>
-                    <button className='projects-github' onClick={redirectToGithub2} type="button"><img src={github_logo}/>Github</button>
-                    <button className='projects-demo' onClick={redirectToDemo2} type="button"><img src={demo_logo}/>Demo</button>
+                    <button className='projects-github-single' onClick={redirectToGithub1} type="button"><img src={github_logo}/>Github</button>
                 </div>
             </div>
         ) : isOpen3 ? (
@@ -86,8 +89,8 @@ const Projects = () => {
                         <li>{projects_data[2].w_bp_3}</li>
                         <li>{projects_data[2].w_bp_4}</li>
                     </ul>
-                    <button className='projects-github' onClick={redirectToGithub3} type="button"><img src={github_logo}/>Github</button>
-                    <button className='projects-demo' onClick={redirectToDemo3} type="button"><img src={demo_logo}/>Demo</button>
+                    <button className='projects-github' onClick={redirectToGithub2} type="button"><img src={github_logo}/>Github</button>
+                    <button className='projects-demo' onClick={redirectToDemo2} type="button"><img src={demo_logo}/>Demo</button>
                 </div>
             </div>
         ) : isOpen4 ? (
@@ -101,16 +104,23 @@ const Projects = () => {
                         <li>{projects_data[3].w_bp_3}</li>
                         <li>{projects_data[3].w_bp_4}</li>
                     </ul>
-                    <button className='projects-github' onClick={redirectToGithub4} type="button"><img src={github_logo}/>Github</button>
-                    <button className='projects-demo' onClick={redirectToDemo4} type="button"><img src={demo_logo}/>Demo</button>
+                    <button className='projects-github' onClick={redirectToGithub3} type="button"><img src={github_logo}/>Github</button>
+                    <button className='projects-demo' onClick={redirectToDemo3} type="button"><img src={demo_logo}/>Demo</button>
                 </div>
             </div>
         ) : isOpen5 ? (
             <div className="popup-project">
-                <span onClick={()=> setOpen5(false)}>&times;</span>
+                <span onClick={()=> setOpen4(false)}>&times;</span>
                 <div className="popup">
                     <h>{projects_data[4].w_name}</h>
-                    <p>{projects_data[4].w_description}</p>
+                    <ul>
+                        <li>{projects_data[4].w_bp_1}</li>
+                        <li>{projects_data[4].w_bp_2}</li>
+                        <li>{projects_data[4].w_bp_3}</li>
+                        <li>{projects_data[4].w_bp_4}</li>
+                    </ul>
+                    <button className='projects-github' onClick={redirectToGithub4} type="button"><img src={github_logo}/>Github</button>
+                    <button className='projects-demo' onClick={redirectToDemo4} type="button"><img src={demo_logo}/>Demo</button>
                 </div>
             </div>
         ) : isOpen6 ? (
