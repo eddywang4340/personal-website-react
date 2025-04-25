@@ -1,20 +1,21 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import Projects from './Components/Projects/Projects'
-import Contact from './Components/Contact/Contact'
-import Footer from './Components/Footer/Footer'
+import ModernNavbar from './Components/Navbar/ModernNavbar'
+import ModernHero from './Components/Hero/ModernHero'
+import ModernAbout from './Components/About/ModernAbout'
+import ModernProjects from './Components/Projects/ModernProjects'
+import ModernContact from './Components/Contact/ModernContact'
+// Import the CSS files
+import './index.css'
+import './animations.css'
 
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Contact/>
-      {/* <Footer/> */}
+    <div style={{ backgroundColor: '#0C2D48', color: 'white', minHeight: '100vh' }}>
+      <ModernNavbar />
+      <ModernHero />
+      <ModernAbout />
+      <ModernProjects />
+      <ModernContact />
     </div>
   )
 }
