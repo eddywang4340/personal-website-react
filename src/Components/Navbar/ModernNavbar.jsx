@@ -13,7 +13,7 @@ const ModernNavbar = () => {
       setIsScrolled(scrollPosition > 20);
       
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'projects', 'contact'];
+      const sections = ['home', 'about', 'experience', 'projects', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -34,6 +34,7 @@ const ModernNavbar = () => {
   const navItems = [
     { label: 'Home', id: 'home' },
     { label: 'About', id: 'about' },
+    { label: 'Experience', id: 'experience' },
     { label: 'Projects', id: 'projects' },
     { label: 'Contact', id: 'contact' },
   ];

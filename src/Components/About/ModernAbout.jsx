@@ -9,11 +9,10 @@ const ModernAbout = () => {
   const skills = [
     { name: "Python", level: 90, icon: "🐍" },
     { name: "C", level: 80, icon: "⚙️" },
+    { name: "C++", level: 80, icon: "📊" },
     { name: "Linux", level: 85, icon: "🐧" },
-    { name: "Git", level: 80, icon: "📊" },
     { name: "HTML", level: 75, icon: "🌐" },
-    { name: "Java", level: 65, icon: "☕" },
-    { name: "React", level: 65, icon: "⚛️" }
+    { name: "Java", level: 65, icon: "☕" }
   ];
   
   // Animate skill bars on scroll
