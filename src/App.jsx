@@ -2,6 +2,7 @@ import React from 'react'
 import ModernNavbar from './Components/Navbar/ModernNavbar'
 import ModernHero from './Components/Hero/ModernHero'
 import ModernAbout from './Components/About/ModernAbout'
+import ModernExperience from './Components/Experience/ModernExperience'
 import ModernProjects from './Components/Projects/ModernProjects'
 import ModernContact from './Components/Contact/ModernContact'
 // Import the CSS files
@@ -14,6 +15,7 @@ const App = () => {
       <ModernNavbar />
       <ModernHero />
       <ModernAbout />
+      <ModernExperience />
       <ModernProjects />
       <ModernContact />
     </div>
